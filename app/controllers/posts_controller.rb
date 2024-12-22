@@ -4,6 +4,8 @@ class PostsController < ApplicationController
   end
 
   def new
+    @posts = Post.new
+    redirect_to root_path
   end
 
   def create
